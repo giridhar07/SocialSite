@@ -14,8 +14,8 @@ export default function App({ Component, pageProps }) {
 
   return (
     <>
-      <Component {...pageProps} posts={posts} setPosts={setPosts} />
       <Toaster position="top-right" />
+      <Component {...pageProps} posts={posts} setPosts={setPosts} />
     </>
   );
 }
