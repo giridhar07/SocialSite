@@ -1,5 +1,6 @@
 import "@/styles/globals.css";
 import { useState } from "react";
+import { Toaster } from "react-hot-toast";
 
 export default function App({ Component, pageProps }) {
   const [posts, setPosts] = useState([
@@ -14,6 +15,7 @@ export default function App({ Component, pageProps }) {
   return (
     <>
       <Component {...pageProps} posts={posts} setPosts={setPosts} />
+      <Toaster position="top-right" />
     </>
   );
 }
