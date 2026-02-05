@@ -1,4 +1,5 @@
 import Navbar from "../Components/NavBar";
+import toast from "react-hot-toast";
 import { useState } from "react";
 import { useRouter } from "next/router";
 
@@ -20,6 +21,7 @@ export default function AddPost({ posts, setPosts }) {
       },
     ]);
 
+    toast.success("Post added successfully!");
     router.push("/");
   };
 
